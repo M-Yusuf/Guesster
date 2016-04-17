@@ -29,6 +29,7 @@
     <!-- This is a wide open CSP declaration. To lock this down for production, see below. -->
     <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *" />
     <meta name="description" content="Guesster">
+    <link rel="shortcut icon" href="img/favicon.ico" />
     <!-- Good default declaration:
     * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
     * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
@@ -42,12 +43,33 @@
     <link rel="stylesheet" type="text/css" href="css/fontawesome/css/font-awesome.css">
     <link rel="stylesheet" type="text/css" href="font/opensans/font.css">
     <link rel="stylesheet" type="text/css" href="css/index.css" />
-    <title>Guessters</title>
+    <title>Guesster</title>
 </head>
 
 <body>
-    <div class="app">
-        
+    <div class="app splash">
+      <div class="header">
+        <div class="nav">
+          <h2 class="logo">Guesster</h2>
+        </div>
+      </div>
+      <div class="meat">
+        <div class="info">
+          <h2><i class="fa fa-eye"></i>Read My Mind!</h2>
+        </div>
+        <div class="image">
+          <img src="img/cat-one.png">
+        </div>
+        <div class="info">
+          <p>I'm thinking of a number between 1 and 10 (Not Including 10)</p>
+        </div>
+        <div class="guess">
+          <input type="number" maxlength="1">
+        </div>
+        <div class="button">
+          <button type="submit" class="play-btn">Check</button>
+        </div>
+      </div>
         <!-- <div id="deviceready" class="blink">
             <p class="event listening"></p>
             <p class="event received"></p>
