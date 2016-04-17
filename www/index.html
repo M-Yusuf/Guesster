@@ -42,15 +42,16 @@
     <link rel="stylesheet" type="text/css" href="css/reset.css">
     <link rel="stylesheet" type="text/css" href="css/fontawesome/css/font-awesome.css">
     <link rel="stylesheet" type="text/css" href="font/opensans/font.css">
-    <link rel="stylesheet" type="text/css" href="css/index.css" />
-    <title>Guesster</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <link rel="stylesheet" type="text/css" href="js/script.js" />
+    <title>Cadabra</title>
 </head>
 
 <body>
     <div class="app splash">
       <div class="header">
         <div class="nav">
-          <h2 class="logo">Guesster</h2>
+          <h2 class="logo">Cadabra</h2>
         </div>
       </div>
       <div class="meat">
@@ -64,10 +65,12 @@
           <p>I'm thinking of a number between 1 and 10 (Not Including 10)</p>
         </div>
         <div class="guess">
-          <input type="number" maxlength="1">
+          <input type="number" maxlength="1" id="number-input">
         </div>
         <div class="button">
-          <button type="submit" class="play-btn">Check</button>
+          <form>
+            <input value="Check" type="submit" class="play-btn" id="check-input">
+          </form>
         </div>
       </div>
         <!-- <div id="deviceready" class="blink">
